@@ -3,6 +3,6 @@ from .models import BlogPost
 
 class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
-        model: BlogPost
+        model = BlogPost
         # Specify the content of the model that we want the api to return
-        fields: ["id", "title", "content", "published_date"]
+        fields = ["id", "title", "content", "published_date"]
